@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Bolod to Boss",
+        "author": "Jhankar Mahbub",
+        "price": "1050",
+        "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/95512cdf1cf4_128993.jpg",
+        "publisher": "Print publisher",
+        "language": "Bangla, English",
+        "category": "Beginner, Technology",
+        "subject": "Programming"
+    },
+    {
+        "id": 2,
+        "name": "Peramoy Lifer Peracitamol",
+        "author": "Jhankar Mahbub",
+        "price": "1760",
+        "image": "https://bdebooks.com/wp-content/uploads/wordpress-popular-posts/14448-featured-260x385.jpg",
+        "publisher": "KC publisher",
+        "language": "Bangla, English",
+        "category": "Motivational",
+        "subject": "Life, Achievement"
+    },
+    {
+        "id": 3,
+        "name": "Programming er Coddogusti",
+        "author": "Jhankar Mahbub",
+        "price": "1950",
+        "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/f0836d0b7_158227.jpg",
+        "publisher": "Darmi publisher",
+        "language": "Bangla, English",
+        "category": "Beginner, Technology",
+        "subject": "Programming"
+    },
+    {
+        "id": 4,
+        "name": "Recharge your down battery",
+        "author": "Jhankar Mahbub",
+        "price": "1251",
+        "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/34eff29de_155900.jpg",
+        "publisher": "Printy publisher",
+        "language": "Bangla, English",
+        "category": "Motivational",
+        "subject": "Time saving"
+    }
+]
