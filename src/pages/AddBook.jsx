@@ -10,6 +10,7 @@ function AddBook() {
             <Form
                 title={"Add New Book"}
                 text={"Add Book"}
+                currentBook={""}
             ></Form>
         </div>
     )

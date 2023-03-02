@@ -31,6 +31,10 @@ export const Routes = createBrowserRouter([
       },
       {
         path: "/updateBook/:id",
+        loader: ({ params }) =>
+          fetch(
+            `http://localhost:5000/singleBook/${params.id}`
+          ),
         element: <UpdateBook />
       }
     ],

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router';
 
-export function Form({ title, text }) {
+export function Form({ title, text, currentBook }) {
 
     const id = useParams()
     console.log(id.id)
+    console.log(currentBook)
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -75,7 +76,7 @@ export function Form({ title, text }) {
                             id="title"
                             name="title"
                             type="text"
-                            placeholder="Enter book title"
+                            placeholder={currentBook ? currentBook.title : "Enter book title"}
                         />
                     </div>
                     <div className="w-full md:w-1/2 px-4">
@@ -87,7 +88,7 @@ export function Form({ title, text }) {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Enter book author"
+                            placeholder={currentBook ? currentBook.author : "Enter book author"}
                         />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mt-4">
@@ -99,7 +100,7 @@ export function Form({ title, text }) {
                             id="publisher"
                             name="publisher"
                             type="text"
-                            placeholder="Enter book publisher"
+                            placeholder={currentBook ? currentBook.publisher : "Enter book publisher"}
                         />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mt-4">
@@ -111,7 +112,7 @@ export function Form({ title, text }) {
                             id="language"
                             name="language"
                             type="text"
-                            placeholder="Enter book language"
+                            placeholder={currentBook ? currentBook.language : "Enter book language"}
                         />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mt-4">
@@ -123,7 +124,7 @@ export function Form({ title, text }) {
                             id="category"
                             name="category"
                             type="text"
-                            placeholder="Enter book category"
+                            placeholder={currentBook ? currentBook.category : "Enter book category"}
                         />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mt-4">
@@ -135,7 +136,7 @@ export function Form({ title, text }) {
                             id="subject"
                             name="subject"
                             type="text"
-                            placeholder="Enter book subject"
+                            placeholder={currentBook ? currentBook.subject : "Enter book subject"}
                         />
                     </div>
                 </div>
@@ -148,7 +149,7 @@ export function Form({ title, text }) {
                         id="photo"
                         name="photo"
                         type="text"
-                        placeholder="Enter photo URL"
+                        placeholder={currentBook ? currentBook.image : "Enter photo URL"}
                     />
                 </div>
                 <div className="text-center mt-8">

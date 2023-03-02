@@ -2,7 +2,7 @@ import React from 'react';
 import { MdDelete, MdEdit, MdVisibility } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-function Card({ book, refetch, setRefetch }) {
+function Book({ book, refetch, setRefetch }) {
 
     const { _id, image, title, author, price } = book
 
@@ -70,4 +70,4 @@ function Card({ book, refetch, setRefetch }) {
     );
 }
 
-export default Card;
+export default Book;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Card from './Card';
+import Book from './Book';
 
-export function AllCard() {
+export function AllBooks() {
 
     const [refetch, setRefetch] = useState(false)
     const [books, setBooks] = useState([]);
@@ -15,13 +15,13 @@ export function AllCard() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             {
-                books.map((book) => <Card
+                books.map((book) => <Book
                     key={book._id}
                     book={book}
                     refetch={refetch}
                     setRefetch={setRefetch}
 
-                ></Card>)
+                ></Book>)
             }
         </div>
     );
