@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import Book from './Book';
+import Coffee from './Coffee';
 
-export function AllBooks() {
+export function AllCoffee() {
 
     const [refetch, setRefetch] = useState(false)
-    const [books, setBooks] = useState([]);
+    const [coffee, setCoffee] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/books')
+        fetch('http://localhost:5000/coffee')
             .then(res => res.json())
-            .then(data => setBooks(data))
+            .then(data => setCoffee(data))
     }, [refetch])
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             {
-                books.map((book) => <Book
-                    key={book._id}
-                    book={book}
+                coffee.map((coffee) => <Coffee
+                    key={coffee._id}
+                    coffee={coffee}
                     refetch={refetch}
                     setRefetch={setRefetch}
 
-                ></Book>)
+                ></Coffee>)
             }
         </div>
     );

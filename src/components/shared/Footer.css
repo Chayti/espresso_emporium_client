@@ -1,0 +1,47 @@
+.footer .logo{
+    height: 5em;
+}
+.bg-image{
+  background-image: url(../../assets/15.jpg);
+}
+.bg-image1{
+    background-image: url(../../assets/13.jpg);
+}
+.bg-image2{
+    background-image: url(../../assets/24.jpg);
+}
+.footer h2{
+    color: #331a15;
+    font-size: 2em;
+    text-align: left;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.footer p{
+    font-family: 'Raleway', sans-serif;
+    color: #331a15;
+    text-align: left;
+    font-size: 1.2em;
+}
+input:focus, textarea:focus {
+    outline: none !important;
+    border:2px solid #d2b48c;
+    box-shadow: 0 0 10px #719ECE;
+}
+.footer .links .link a{
+    color: #331a15;
+}
+.btn2{
+    font-family: 'Rancho', cursive;
+    background-color: #d2b48c;
+    border: 3px solid #331a15;
+    color: #331a15;
+}
+
+.btn2:hover{
+    background-color: #eceae3;    
+}
+.copyright{
+    font-size: 0.8em;
+    font-family: 'Rancho', cursive;
+}

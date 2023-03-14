@@ -1,9 +1,12 @@
 import React from 'react';
+import './Title.css';
+import logo from '../../assets/logo1.png'
 
 export function Title() {
     return (
-        <div className="my-7 py-5 flex items-center justify-center bg-orange-500 rounded-lg text-white text-4xl font-semibold">
-            JKR Bookshop
+        <div className="py-0 flex items-center justify-center bg-image text-white text-4xl font-semibold">
+            <img className="logo mr-2" src={logo} alt="" />
+            <h2>Espresso Emporium</h2>
         </div>
     );
 }

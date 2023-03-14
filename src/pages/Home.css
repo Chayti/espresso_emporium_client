@@ -1,0 +1,24 @@
+.text-h1{
+    color: #331a15;
+    font-size: 3em;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.text-p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+.bg-image3{
+    background-image: url(../assets/4.png);
+    background-repeat: no-repeat;
+}
+.bg-image4{
+    background-image: url(../assets/5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.bg-image5{
+    background-image: url(../assets/11.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}

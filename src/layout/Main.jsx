@@ -1,12 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router';
+import Footer from '../components/shared/Footer';
 import { Title } from '../components/shared/Title';
 
 const Main = () => {
     return (
-        <div className="container mx-auto">
+        <div>
             <Title></Title>
-            <Outlet></Outlet>
+            <div>
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

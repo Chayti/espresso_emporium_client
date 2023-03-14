@@ -1,0 +1,62 @@
+/* section - 1 */
+.section-1{
+    height: 80vh;
+    width: 100%;
+    background-image: url(../assets/3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner-detail{
+    width: 50%;
+}
+
+.special{
+    font-family: 'Rancho', cursive;
+    font-size: 2.5em;
+    color: white;
+    display: block;
+}
+
+.section-1 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    color: white;
+}
+
+.home-banner-btn{
+    font-family: 'Rancho', cursive;
+    background-color: #d2b48c;
+    border: 3px solid #331a15;
+    color: #331a15;
+    font-size: 1.8em;
+    color: #331a15;
+}
+.home-banner-btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+/* section - 2 */
+.section-2{
+    background-color: #eceae3;
+    display: flex;
+    align-items: center;
+}
+.section-2 h2{
+    color: #331a15;
+    text-align: left;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+    font-size: 1.4em;
+}
+.section-2 p{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+}

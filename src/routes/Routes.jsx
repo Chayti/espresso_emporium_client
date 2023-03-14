@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../pages/Home";
-import AddBook from "../pages/AddBook";
-import BookDetails from "../pages/Bookdetails";
-import UpdateBook from "../pages/UpdateBook";
+import AddCoffee from "../pages/addCoffee";
+import CoffeeDetails from "../pages/Coffeedetails";
+import UpdateCoffee from "../pages/UpdateCoffee";
 export const Routes = createBrowserRouter([
   {
     path: "/",
@@ -18,24 +18,24 @@ export const Routes = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/addBook",
-        element: <AddBook />
+        path: "/addCoffee",
+        element: <AddCoffee />
       },
       {
-        path: "/singleBook/:id",
+        path: "/singleCoffee/:id",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/singleBook/${params.id}`
+            `http://localhost:5000/coffee/${params.id}`
           ),
-        element: <BookDetails />
+        element: <CoffeeDetails />
       },
       {
-        path: "/updateBook/:id",
+        path: "/updateCoffee/:id",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/singleBook/${params.id}`
+            `http://localhost:5000/coffee/${params.id}`
           ),
-        element: <UpdateBook />
+        element: <UpdateCoffee />
       }
     ],
   },
