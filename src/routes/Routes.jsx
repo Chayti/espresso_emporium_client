@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import AddCoffee from "../pages/addCoffee";
 import CoffeeDetails from "../pages/Coffeedetails";
 import UpdateCoffee from "../pages/UpdateCoffee";
+import NotFound from "../pages/NotFound";
 export const Routes = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,10 @@ export const Routes = createBrowserRouter([
             `http://localhost:5000/coffee/${params.id}`
           ),
         element: <UpdateCoffee />
+      },
+      {
+        path: "*",
+        element: <NotFound />
       }
     ],
   },

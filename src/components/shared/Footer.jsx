@@ -32,6 +32,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="mb-5">
                     <h2 className="my-3 text-center" style={{ color: "#331a15", fontWeight: "bold", textShadow: "none" }}>Connect with Us</h2>
                     <div className="w-3/4">
