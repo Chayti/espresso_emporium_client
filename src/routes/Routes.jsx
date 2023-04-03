@@ -26,7 +26,7 @@ export const Routes = createBrowserRouter([
         path: "/singleCoffee/:id",
         loader: ({ params }) =>
           fetch(
-            `https://espresso-emporium-server-chayti.vercel.app/coffee/${params.id}`
+            `http://localhost:5000/coffee/${params.id}`
           ),
         element: <CoffeeDetails />
       },
@@ -34,7 +34,7 @@ export const Routes = createBrowserRouter([
         path: "/updateCoffee/:id",
         loader: ({ params }) =>
           fetch(
-            `https://espresso-emporium-server-chayti.vercel.app/coffee/${params.id}`
+            `http://localhost:5000/coffee/${params.id}`
           ),
         element: <UpdateCoffee />
       },

@@ -15,7 +15,7 @@ function Coffee({ coffee, refetch, setRefetch }) {
         })
             .then(ans => {
                 if (ans) {
-                    fetch(`https://espresso-emporium-server-chayti.vercel.app/coffee/${id}`, {
+                    fetch(`http://localhost:5000/coffee/${id}`, {
                         method: "DELETE",
                         headers: {
                             "Content-Type": "application/json",
