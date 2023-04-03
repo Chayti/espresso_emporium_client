@@ -34,7 +34,7 @@ export function Form({ title, text, currentCoffee }) {
 
         text == "Add Coffee"
 
-            ? fetch(`http://localhost:5000/coffee`, {
+            ? fetch(`https://espresso-emporium-server-chayti.vercel.app/coffee`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export function Form({ title, text, currentCoffee }) {
                     form.reset()
                 })
 
-            : fetch(`http://localhost:5000/updateCoffee/${id.id}`, {
+            : fetch(`https://espresso-emporium-server-chayti.vercel.app/updateCoffee/${id.id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

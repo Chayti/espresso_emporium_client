@@ -7,7 +7,7 @@ export function AllCoffee() {
     const [coffee, setCoffee] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/coffee')
+        fetch('https://espresso-emporium-server-chayti.vercel.app/coffee')
             .then(res => res.json())
             .then(data => setCoffee(data))
     }, [refetch])
