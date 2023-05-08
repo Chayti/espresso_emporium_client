@@ -43,6 +43,7 @@ export function Form({ title, text, currentCoffee }) {
             })
                 .then((res) => res.json())
                 .then((data) => {
+                    console.log(data)
                     swal({
                         title: "Yahhh!!!",
                         text: "Coffee added successfully",

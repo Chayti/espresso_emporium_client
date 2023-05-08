@@ -9,7 +9,10 @@ export function AllCoffee() {
     useEffect(() => {
         fetch('http://localhost:5000/coffee')
             .then(res => res.json())
-            .then(data => setCoffee(data))
+            .then(data => {
+                console.log(data)
+                setCoffee(data)
+            })
     }, [refetch])
 
     return (

@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdDelete, MdEdit, MdVisibility } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Coffee({ coffee, refetch, setRefetch }) {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    }, [])
 
     const { _id, image, name, chef, price } = coffee
 
@@ -37,7 +48,7 @@ function Coffee({ coffee, refetch, setRefetch }) {
     }
 
     return (
-        <div className="p-6 flex items-center justify-between bg-[#eceae380] rounded-lg">
+        <div data-aos="flip-left" className="p-6 flex items-center justify-between bg-[#eceae380] rounded-lg">
 
             <div className="w-1/4">
                 <img
